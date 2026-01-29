@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Love Story ❤️</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Parisienne&family=Roboto:wght@400;700&display=swap');
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(to bottom, #ffe4e1, #fff0f5);
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      color: #333;
+    }
+
+    <!-- YouTube Music Embed (Hidden) -->
+<iframe id="yt-music" width="0" height="0"
+  src="https://www.youtube.com/embed/GhQxrCrVSyw?enablejsapi=1"
+  frameborder="0"
+  allow="autoplay; encrypted-media"
+  allowfullscreen>
+</iframe>
+
+<!-- Music Controls -->
+<button onclick="playYT()" style="padding:10px 20px; font-size:16px; margin-top:20px; border-radius:8px; background-color:#ff69b4; color:white; border:none; cursor:pointer;">
+  Play Music 💖
+</button>
+
+<button onclick="pauseYT()" style="padding:10px 20px; font-size:16px; margin-top:10px; border-radius:8px; background-color:#ff1493; color:white; border:none; cursor:pointer;">
+  Pause Music 💔
+</button>
+
+<script>
+  // YouTube IFrame API
+  var tag = document.createElement('script');
+  tag.src = "https://www.youtube.com/iframe_api";
+  document.body.appendChild(tag);
+
+  var player;
+  function onYouTubeIframeAPIReady() {
+    player = new YT.Player('yt-music');
+  }
+
+  function playYT() {
+    if (player) player.playVideo();
+  }
+
+  function pauseYT() {
+    if (player) player.pauseVideo();
+  }
+</script>
+
+    h1 {
+      font-family: 'Parisienne', cursive;
+      font-size: 3em;
+      color: #ff1493;
+      margin: 20px 0;
+    }
+
+    .photo {
+      width: 300px;
+      max-width: 80%;
+      border-radius: 20px;
+      margin: 20px auto;
+      box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+      display: block;
+    }
+
+   <img src="c2883fb7-3d5a-4a0d-9b43-16d89e52ddb8.jp" alt="our picture together" class="photo">
+    }
+
+    .story-container {
+      max-width: 700px;
+      margin: 30px auto;
+      background-color: rgba(255, 240, 245, 0.9);
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+      text-align: left;
+      line-height: 1.6;
+      overflow-y: auto;
+      max-height: 500px;
+    }
+
+    .story-container p {
+      background-color: #fff0f5;
+      padding: 15px 20px;
+      border-radius: 15px;
+      margin-bottom: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    }
+
+    .story-container::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    .story-container::-webkit-scrollbar-thumb {
+      background-color: #ff69b4;
+      border-radius: 4px;
+    }
+
+    audio {
+      display: none; /* hides audio controls */
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Our Love Story ❤️</h1>
+  <img src="your-photo.jpg" alt="Us Together" class="photo">
+
+  <div class="story-container">
+    <p>Hi, I just wanted to say thank you for everything you’ve done for me—not just for the things you’ve done, but for the way you make me feel so, so special and loved every single day.</p>
+
+    <p>We’ve faced a lot of challenges together, and through it all, you were always my strength and my comfort. Even on the hardest days, knowing that you were there for me made everything feel a little lighter. I’m so proud of you—for everything you are and everything you’ve accomplished. You’re the kindest, most handsome man I know, and I feel so lucky to have had you in my life.</p>
+
+    <p>Even though we’re not together anymore, I promised to always be by your side in spirit. Today would have been our anniversary if things had gone differently, and though it’s just a normal day now, I find myself still writing this to you—because my heart wants you to know how much you mean to me.</p>
+
+    <p>I miss the way we used to laugh together, the quiet moments when we didn’t even need words, and the little things that made our love feel so real. Sometimes I wish I could go back and hold your hand just one more time, smile with you one more time, and tell you in person how deeply I care.</p>
+
+    <p>Even in the sadness of us being apart, I hope you know that a part of my heart will always belong to you. I will always wish the best for you, always cheer for you, and always hope you are happy.</p>
+
+    <p>Thank you for the love we shared, for the memories we created, and for being the amazing person you are. I may not get to celebrate today as our anniversary, but I carry all the moments, the laughter, and the love in my heart forever. 💖</p>
+  </div>
+
+  <!-- Background Music -->
+  <audio autoplay loop>
+    <source src="https://www.youtube.com/watch?v=GhQxrCrVSyw&list=RDGhQxrCrVSyw&start_radio=1" type="audio/mpeg">
+  </audio>
+
+</body>
+</html>
